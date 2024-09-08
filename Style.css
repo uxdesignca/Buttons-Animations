@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reseteo */
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #1e1e1e;
+    text-align: center;
+}
+
+/* Contenedor */
+.container{
+    text-align: center;
+}
+
+.Titulo{
+    font-family: Poppins;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+}
+
+/* Estilos de Botones */
+.Buttons{
+    border: 1px solid white;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "Poppins";
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+/* --------------------------------------------------------------- */
+/*                           Animaciones                           */
+/* --------------------------------------------------------------- */
+
+.Buttons1{
+    color: white;
+}
+
+.Buttons1:hover{
+    color: white;
+}
+
+.Buttons2{
+    color: white;
+}
+
+.Buttons2:hover{
+    color: wh;
+}
+
+.Buttons::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #29C79D;
+    z-index: -1;
+    transition: 0.8s;
+}
+
+.Buttons1::before, .Buttons2::before{
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+}  
+
+.Buttons2::before{
+    height: 180%;
+}
+
+.Buttons1:hover::before{
+    height: 180%;
+}
+
+.Buttons2:hover::before,.btn4:hover::before{
+    height: 0%;
+}
+
+/* Animación Glow */
+
+.Buttons3-Glow {
+    color: white;
+    background: #3F0158;
+    box-shadow: 0 0 20px #3F0158, 0 0 40px #3F0158, 0 0 60px #3F0158;
+    transition: box-shadow 0.3s;
+}
+
+.Buttons3-Glow:hover {
+    box-shadow: 0 0 40px #3F0158, 0 0 80px #3F0158, 0 0 120px #3F0158;
+}
+
+
+/* Animación Flip */
+
+.Buttons4-Flip {
+    background: linear-gradient(45deg, #3F0158, #29C79D);
+    transition: transform 0.6s;
+    color: white;
+}
+
+.Buttons4-Flip:hover {
+    transform: rotateY(180deg);
+}
+
+/* Footer */
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: white;
+    color: white;
+    font-family: "Poppins";
+    color: #3F0158;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+  }
